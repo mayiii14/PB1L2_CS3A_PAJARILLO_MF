@@ -1,0 +1,121 @@
+/* Simple page design */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3eff8;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #65449a;
+}
+
+.container > p {
+    text-align: center;
+    color: #777;
+}
+
+/* Box design */
+
+.box {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+h2 {
+    color: #65449a;
+}
+
+/* Form design */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    background: #65449a;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-top: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #50347d;
+}
+
+.postButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#count {
+    color: #777;
+    font-size: 13px;
+}
+
+/* Post design */
+
+.post {
+    background: white;
+    margin-top: 15px;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 5px solid #65449a;
+}
+
+.postInfo {
+    color: #777;
+    font-size: 12px;
+}
+
+.original {
+    margin-top: 12px;
+}
+
+.encrypted {
+    background: #f1edf7;
+    padding: 10px;
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.label {
+    color: #65449a;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Hide an element */
+
+.hidden {
+    display: none;
+}
