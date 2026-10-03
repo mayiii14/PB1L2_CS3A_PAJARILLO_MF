@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post It</title>
+
+    <link rel="stylesheet" href="postit.css">
+
+    <!-- CryptoJS 4.2.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Post It</h1>
+        <p>Share your thoughts</p>
+
+        <!-- User information -->
+        <div id="userBox" class="box">
+
+            <h2>User Information</h2>
+
+            <form id="userForm">
+
+                <input type="text" id="name"
+                    placeholder="Full Name" required>
+
+                <input type="date" id="birthday" required>
+
+                <select id="yearLevel" required>
+                    <option value="">Year Level</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+
+                <select id="gender" required>
+                    <option value="">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select>
+
+                <input type="text" id="username"
+                    placeholder="Username" required>
+
+                <input type="password" id="password"
+                    placeholder="Password" required>
+
+                <button type="submit">Continue</button>
+
+            </form>
+        </div>
+
+
+        <!-- Post box -->
+        <div id="postBox" class="box hidden">
+
+            <h2 id="welcome"></h2>
+
+            <form id="postForm">
+
+                <textarea id="post"
+                    placeholder="Write your caption..."
+                    maxlength="280"
+                    required></textarea>
+
+                <div class="postButton">
+                    <span id="count">0 / 280</span>
+                    <button type="submit">POST</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- Posts will appear here -->
+        <div id="thread" class="hidden">
+
+            <h2>Your Posts</h2>
+
+            <div id="posts"></div>
+
+        </div>
+
+    </div>
+
+    <script src="postit.js"></script>
+
+</body>
+</html>
